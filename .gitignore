@@ -28,4 +28,7 @@ junk_and_old_stuff
 # lock files
 yarn.lock
 package-lock.json
+
+# server
+server/node_modules
 server/package-lock.json
