@@ -1,18 +1,31 @@
-const { ApolloServer, gql } = require('apollo-server-express');
-const { typeDefs, resolvers } = require('./schema');
+const { GraphQLServer } = require('graphql-yoga')
+const { Prisma } = require('prisma-binding')
+const Query = require('./resolvers/Query')
+const Mutation = require('./resolvers/Mutation')
+const AuthPayload = require('./resolvers/AuthPayload')
+const Subscription = require('./resolvers/Subscription')
+const Feed = require('./resolvers/Feed')
 
-// In the most basic sense, the ApolloServer can be started
-// by passing type definitions (typeDefs) and the resolvers
-// responsible for fetching the data for those types.
-const server = new ApolloServer({ typeDefs, resolvers });
+const resolvers = {
+  Query,
+  Mutation,
+  AuthPayload,
+  Subscription,
+  Feed
+}
 
-server.applyMiddleware({ app })
-
-app.listen({ port: 4000}, () =>
- console.log(`🚀 Server ready at http://localhost:4000${server.graphqlPath}`)
-);
-/*
-server.listen().then(({ url }) => {
-    console.log(`Live at ${url}`);
-});
-*/
+// GQL Yoga Server
+const server = new GraphQLServer({
+  typeDefs: './src/schema.graphql',
+  resolvers,
+  context: req => ({
+    ...req,
+    db: new Prisma({
+      typeDefs: 'src/generated/prisma.graphql',
+      endpoint: 'https://eu1.prisma.sh/stefan-lachmann-e05219/my-web-stefan/dev',
+      secret: 'mysecret123',
+      debug: true,
+    }),
+  }),
+})
+server.start(() => console.log(`Server is running on http://localhost:4000`))
