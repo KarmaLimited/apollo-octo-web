@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { withRouter } from 'react-router';
-import { AUTH_TOKEN } from './constants'
+import { AUTH_TOKEN } from './utils/constants'
 
 class Header extends React.Component {
 
@@ -10,32 +10,36 @@ class Header extends React.Component {
         return (
             <header className="header">
                 <div>Stefan stuff</div>
-                <span>
+                <div>
                     <Link to="/new" className="links">
                         News
                     </Link>
+                    <span> | </span>
+                    <Link to="/search" className="links">
+                        Search
+                    </Link>
+                    <span> | </span>
                     {authToken && (
                         <span>
-                            <span> | </span>
                             <Link to="/create" className="links">Submit</Link>
                         </span>
                     )
                     }
-                     <span> | </span>
-                    <span>
+                    <span> | </span>
+                    <span className="">
                         {authToken ? (
-                            <span onClick={() => {
+                            <span className="pointer" onClick={() => {
                                 localStorage.removeItem(AUTH_TOKEN)
                                 this.props.history.push('/new')
                             }}>
-                                Logout
-                    </span>
+                                <span className="logout">Logout</span>
+                        </span>
                         ) : (
-                                <Link to="/" className="links">Login</Link>
+                                <Link to="/" className="links login">Login</Link>
                             )
                         }
                     </span>
-                </span>
+                </div>
             </header>
         )
     }

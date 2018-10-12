@@ -3,7 +3,7 @@ import Link from './links';
 import { Query } from 'react-apollo';
 import gql from 'graphql-tag';
 
-const FEED_QUERY = gql`
+export const FEED_QUERY = gql`
 {
     feed{
         links{
@@ -11,14 +11,37 @@ const FEED_QUERY = gql`
             createdAt
             url
             description
+            postedBy {
+                id
+                name
+            }
+            votes {
+                id
+                user{
+                    id
+                }
+            }
         }
     }
 }
 `
 class LinkList extends Component {
+
+    _updateCacheAfterVote = (store, createVote, linkId) => {
+        // Read the current state of the cached data for the FEED_QUERY from the store.
+        const data = store.readQuery({ query: FEED_QUERY });
+
+        // Find the link that the user just voted for from that list. 
+        const votedLink = data.feed.links.find(link => link.id === linkId)
+        // Manipulate that link by resetting its votes to the votes that were requested from server.
+        votedLink.votes = createVote.link.votes;
+
+        // Modify data and write it back into the store.
+        store.writeQuery({ query: FEED_QUERY, data })
+    }
     render() {
         return (
-            <div style={{textAlign:'center'}}>
+            <div style={{ textAlign: 'center' }}>
                 <Query query={FEED_QUERY}>
                     {({ loading, error, data }) => {
                         if (loading) return <div>Loading...</div>
@@ -27,9 +50,17 @@ class LinkList extends Component {
                         const linksToRender = data.feed.links
                         return (
                             <div>
-                                <ul>
-                                {linksToRender.map(link => <li key={link.id+'Li'}><Link key={link.id} link={link} /></li>)}
-                                </ul>
+
+                                {linksToRender.map((link, index) => (
+
+                                    <Link
+                                        index={index}
+                                        key={link.id}
+                                        link={link}
+                                        updateStoreAfterVote={this._updateCacheAfterVote}
+                                    />
+                                ))}
+
                             </div>
                         )
                     }}

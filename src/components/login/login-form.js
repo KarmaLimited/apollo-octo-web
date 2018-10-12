@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { AUTH_TOKEN } from '../constants'
+import { AUTH_TOKEN } from '../utils/constants'
 import { Mutation } from 'react-apollo'
 import gql from 'graphql-tag'
 import { withRouter} from 'react-router-dom';

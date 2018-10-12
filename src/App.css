@@ -10,7 +10,7 @@
   text-align: center;
 }
 .links {
-  color:white !important;
+  color:white;
 }
 a {
   color:black;
@@ -19,4 +19,10 @@ a {
 }
 a:hover{
   color:#174ac2;  
+}
+.logout, .login {
+  color:yellow;
+}
+body{
+  text-align:center;
 }
