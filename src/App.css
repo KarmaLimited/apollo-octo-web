@@ -1,4 +1,4 @@
-.header {
+.header, .footer {
   background-color: #282c34;
   height: 10vh;
   display: flex;
@@ -7,6 +7,10 @@
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
+  text-align: center;
+}
+.links {
+  color:white !important;
 }
 a {
   color:black;

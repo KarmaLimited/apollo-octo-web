@@ -1,20 +1,27 @@
-import React, { Component } from 'react';
+import React from 'react';
+import { Switch, Route } from 'react-router-dom';
 
-import LoginPage from './components/login';
+import Login from './components/login';
+import Header from './components/header';
+import Footer from './components/footer';
+
+import LinkList from './components/linkList';
+import CreateLinks from './components/createLinks'
 import './App.css';
 
-class App extends Component {
+class App extends React.Component {
   render() {
     return (
       <div className="App">
-        <header className="header">
-        header
-        </header>
+        <Header />
         <div>
-         <LoginPage />
+          <Switch>
+            <Route exact path="/" component={Login} />
+            <Route exact path="/new" component={LinkList} />
+            <Route exact path="/create" component={CreateLinks} />
+          </Switch>
         </div>
-
-
+        <Footer />
       </div>
     );
   }
