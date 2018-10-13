@@ -1,6 +1,6 @@
 .header, .footer {
   background-color: #282c34;
-  height: 10vh;
+  height: 12vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -8,6 +8,9 @@
   font-size: calc(10px + 2vmin);
   color: white;
   text-align: center;
+}
+.footer{
+  height: 12vh;
 }
 .links {
   color:white;
@@ -18,11 +21,44 @@ a {
   transition: all 0.25s ease-in-out;
 }
 a:hover{
-  color:#174ac2;  
+  color:#43A047;
 }
 .logout, .login {
   color:yellow;
 }
 body{
   text-align:center;
+}
+.content {
+  min-height: calc(88vh - 12vh);
+}
+input {
+  font-family: "Roboto", sans-serif;
+  outline: 0;
+  background: #f2f2f2;
+  width: 80vw;
+  border: 0;
+  margin: 0 0 15px;
+  padding: 15px;
+  box-sizing: border-box;
+  font-size: 14px;
+}
+button {
+  font-family: "Roboto", sans-serif;
+  text-transform: capitalize;
+  outline: 0;
+  border-radius:5px;
+  background: #4CAF50;
+  width: auto;
+  border: 0;
+  padding: 10px;
+  color: #FFFFFF;
+  font-size: 14px;
+  -webkit-transition: all 0.3 ease;
+  transition: all 0.3 ease;
+  cursor: pointer;
+}
+.voteChevron{
+  height: 25px;
+  margin: 0px 5px -5px 5px;
 }

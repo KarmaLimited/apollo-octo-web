@@ -38,12 +38,12 @@ class Search extends Component {
     return (
       <div>
         <div>
-          Search
           <input
             type='text'
+            placeholder="Search"
             onChange={e => this.setState({ filter: e.target.value })}
-          />
-          <button onClick={() => this._executeSearch()}>OK</button>
+          /><br/>
+          <button style={{width:'15vw'}} onClick={() => this._executeSearch()}>OK</button>
         </div>
         {this.state.links.map((link, index) => (
           <Link key={link.id} link={link} index={index} />

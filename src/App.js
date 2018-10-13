@@ -15,7 +15,7 @@ class App extends React.Component {
     return (
       <div className="App">
         <Header />
-        <div>
+        <div className="content">
           <Switch>
             <Route exact path="/" component={Login} />
             <Route exact path="/new" component={LinkList} />

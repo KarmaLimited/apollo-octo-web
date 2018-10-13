@@ -16,19 +16,11 @@
 
 .main {
     text-align: left;
-    background: #010002;
+   /* background: #010002;
     background-image: url('https://d2v9y0dukr6mq2.cloudfront.net/video/thumbnail/Eug_QjmOeijhmcjnu/abstract-animation-of-a-digital-padlock-in-cyber-space_4ryr_yfoe__F0011.png');
     background-repeat: no-repeat;
     background-position: center; 
-    background-size: contain;
-}
-
-.aside-1 {
-    background: rgb(46, 148, 182);
-}
-
-.aside-2 {
-    background: rgb(46, 148, 182);
+    background-size: contain; */
 }
 
 @media all and (min-width: 600px) {
@@ -75,7 +67,7 @@
     box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
 }
 
-.form input {
+.form-input {
     font-family: "Roboto", sans-serif;
     outline: 0;
     background: #f2f2f2;
@@ -86,15 +78,20 @@
     box-sizing: border-box;
     font-size: 14px;
 }
-
-.form button {
+.login-box{
+    text-align: center;
+    background: white;
+    padding: 1rem;
+}
+.form-button {
     font-family: "Roboto", sans-serif;
-    text-transform: uppercase;
+    text-transform: capitalize;
     outline: 0;
+    border-radius:5px;
     background: #4CAF50;
     width: 100%;
     border: 0;
-    padding: 15px;
+    padding: 10px;
     color: #FFFFFF;
     font-size: 14px;
     -webkit-transition: all 0.3 ease;
@@ -102,9 +99,9 @@
     cursor: pointer;
 }
 
-.form button:hover,
-.form button:active,
-.form button:focus {
+.form-button:hover,
+.form-button:active,
+.form-button:focus {
     background: #43A047;
 }
 
@@ -162,18 +159,6 @@
 
 .container .info span .fa {
     color: #EF3B3A;
-}
-
-body {
-    background: #76b852;
-    /* fallback for old browsers */
-    background: -webkit-linear-gradient(right, #76b852, #8DC26F);
-    background: -moz-linear-gradient(right, #76b852, #8DC26F);
-    background: -o-linear-gradient(right, #76b852, #8DC26F);
-    background: linear-gradient(to left, #76b852, #8DC26F);
-    font-family: "Roboto", sans-serif;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
 }
 
 /* end of login-form.js */

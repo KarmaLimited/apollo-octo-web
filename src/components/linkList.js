@@ -2,6 +2,8 @@ import React, { Component } from 'react';
 import Link from './links';
 import { Query } from 'react-apollo';
 import gql from 'graphql-tag';
+import Spinner from './loadingspinner';
+
 
 export const FEED_QUERY = gql`
 {
@@ -44,23 +46,25 @@ class LinkList extends Component {
             <div style={{ textAlign: 'center' }}>
                 <Query query={FEED_QUERY}>
                     {({ loading, error, data }) => {
-                        if (loading) return <div>Loading...</div>
+                        if (loading) return <div><Spinner/></div>
                         if (error) return <div>ERROR -> {error}</div>
 
                         const linksToRender = data.feed.links
                         return (
                             <div>
+                                <ol>
+                                    {linksToRender.map((link, index) => (
 
-                                {linksToRender.map((link, index) => (
+                                        <li key={link.id + 'LISTITEM'} index={index}>
+                                            <Link
+                                                key={link.id}
+                                                link={link}
+                                                updateStoreAfterVote={this._updateCacheAfterVote}
+                                            />
+                                        </li>
 
-                                    <Link
-                                        index={index}
-                                        key={link.id}
-                                        link={link}
-                                        updateStoreAfterVote={this._updateCacheAfterVote}
-                                    />
-                                ))}
-
+                                    ))}
+                                </ol>
                             </div>
                         )
                     }}

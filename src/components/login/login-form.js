@@ -31,28 +31,31 @@ class Login extends Component {
   render() {
     const { login, email, password, name } = this.state
     return (
-      <div style={{textAlign:'center', background:'white'}}>
+      <div className="login-box">
         <h4 className="mv3">{login ? 'Login' : 'Sign Up'}</h4>
         <div className="flex flex-column">
           {!login && (
             <input
+              className="form-input"
               value={name}
               onChange={e => this.setState({ name: e.target.value })}
               type="text"
-              placeholder="Your name"
+              placeholder="Enter your name"
             />
           )}
           <input
             value={email}
+            className="form-input"
             onChange={e => this.setState({ email: e.target.value })}
             type="text"
-            placeholder="Your email address"
+            placeholder="Email address"
           />
           <input
             value={password}
+            className="form-input"
             onChange={e => this.setState({ password: e.target.value })}
             type="password"
-            placeholder="Choose a safe password"
+            placeholder="Enter password"
           />
         </div>
         <div className="flex mt3">
@@ -62,16 +65,16 @@ class Login extends Component {
             onCompleted={data => this._confirm(data)}
           >
             {mutation => (
-              <div className="pointer mr2 button" onClick={mutation}>
+              <div className="pointer mr2 form-button" onClick={mutation}>
                 {login ? 'login' : 'create account'}
               </div>
             )}
           </Mutation>
           <div
-            className="pointer button"
+            className="pointer form-button"
             onClick={() => this.setState({ login: !login })}
           >
-            {login ? 'need to create an account?' : 'already have an account?'}
+            {login ? 'Create an account?' : 'Already have an account?'}
           </div>
         </div>
       </div>

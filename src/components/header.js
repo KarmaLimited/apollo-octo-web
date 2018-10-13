@@ -9,19 +9,21 @@ class Header extends React.Component {
         const authToken = localStorage.getItem(AUTH_TOKEN)
         return (
             <header className="header">
-                <div>Stefan stuff</div>
                 <div>
                     <Link to="/new" className="links">
                         News
                     </Link>
                     <span> | </span>
-                    <Link to="/search" className="links">
-                        Search
-                    </Link>
-                    <span> | </span>
                     {authToken && (
                         <span>
-                            <Link to="/create" className="links">Submit</Link>
+                            <Link to="/search" className="links">
+                                Search
+                    </Link>
+                            <span> | </span>
+
+                            <span>
+                                <Link to="/create" className="links">Submit</Link>
+                            </span>
                         </span>
                     )
                     }
@@ -33,7 +35,7 @@ class Header extends React.Component {
                                 this.props.history.push('/new')
                             }}>
                                 <span className="logout">Logout</span>
-                        </span>
+                            </span>
                         ) : (
                                 <Link to="/" className="links login">Login</Link>
                             )
