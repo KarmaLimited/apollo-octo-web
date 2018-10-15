@@ -18,6 +18,11 @@ const resolvers = {
 const server = new GraphQLServer({
   typeDefs: './src/schema.graphql',
   resolvers,
+  // resolverValidationOptions is to silence warning -> Type "Node" is missing a "resolveType" resolver.
+  // The warning is specifically about the Node interface (not type) and that it does not have a specific resolver
+  resolverValidationOptions : {
+    requireResolversForResolveType: false
+  },
   context: req => ({
     ...req,
     db: new Prisma({
