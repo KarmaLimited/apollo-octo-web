@@ -76,10 +76,12 @@ async function vote(parent, args, context, info) {
       user: { id: userId },
       link: { id: args.linkId },
     })
-    // if link-vote exists
-    if (linkExists) {
+
+   /* if link-vote exists // -> makes sure user only can vote once for one link
+   if (linkExists) {
       throw new Error(`Already voted for link: ${args.linkId}`)
     }
+    */
   
     // else create vote
     return context.db.mutation.createVote(

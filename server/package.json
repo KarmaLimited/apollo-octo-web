@@ -8,6 +8,7 @@
     "dev": "npm-run-all --parallel start playground",
     "playground": "graphql playground",
     "prisma": "prisma",
+    "deploy": "prisma deploy",
     "graphql": "graphql"
   },
   "dependencies": {
