@@ -1,5 +1,5 @@
 # My Web Project // WIP
-### a site i'am developing with react, apollo, graphql, prisma and some other stuff to get api data and create a cloudbased workspace for myself to get my feeds, take notes, todo-lists and all kinds of stuff 
+### a site i'am developing with react, apollo, graphql, prisma and some other stuff to get api data and create a personal workspace for myself to get my feeds, take notes, lists and all kinds of stuff 
 
 
 notes:

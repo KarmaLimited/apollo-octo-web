@@ -22,7 +22,6 @@ yarn-debug.log*
 yarn-error.log*
 
 # notes and junk
-.notes
 junk_and_old_stuff
 
 # lock files

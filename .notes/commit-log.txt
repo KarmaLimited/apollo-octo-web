@@ -1,0 +1,129 @@
+* 01f0e9a63d03164eb425ff7b7d99646444b0938d  (HEAD -> master)
+| Realtime updates with GraphQL Subscriptions
+
+| Stefan Lachmann (2018-10-15 15:59:16 +0200)
+* 1d613e77e5c1406b2d5f0377fa9f541f462dcbed
+| added resolverValidationOptions to quiet missing resolver for node warn
+
+| Stefan Lachmann  (2018-10-15 14:50:38 +0200)
+* ad76066d0c317319d9c6f3ace03884b7ca75789c
+| style updates and added spinner animation for loading
+
+| Stefan Lachmann (2018-10-13 22:12:32 +0200)
+* a777960227a7daa39d5d1f72ad52d7378304485a
+| added vote functionality and search
+
+| Stefan Lachmann (2018-10-12 13:01:16 +0200)
+* c32d4474e5b7a24505ee05c52aeb0e23ad965d0c
+| FE:: added: links, gql-queries, mutations, routing and auth
+
+| Stefan Lachmann (2018-10-12 11:34:00 +0200)
+* a48d772dc17e4e43b9d932b3f5ba2d94d79b4bc5
+| extract the userId from auth header in req and use it to connect
+
+| Stefan Lachmann (2018-10-12 11:26:27 +0200)
+* 01f0e9a63d03164eb425ff7b7d99646444b0938d  (HEAD -> master)
+| Realtime updates with GraphQL Subscriptions
+
+| Stefan Lachmann (2018-10-15 15:59:16 +0200)
+* 1d613e77e5c1406b2d5f0377fa9f541f462dcbed
+| added resolverValidationOptions to quiet missing resolver for node warn
+
+| Stefan Lachmann (2018-10-15 14:50:38 +0200)
+* ad76066d0c317319d9c6f3ace03884b7ca75789c
+| style updates and added spinner animation for loading
+
+| Stefan Lachmann (2018-10-13 22:12:32 +0200)
+* a777960227a7daa39d5d1f72ad52d7378304485a
+| added vote functionality and search
+
+| Stefan Lachmann (2018-10-12 13:01:16 +0200)
+* c32d4474e5b7a24505ee05c52aeb0e23ad965d0c
+| FE:: added: links, gql-queries, mutations, routing and auth
+
+| Stefan Lachmann (2018-10-12 11:34:00 +0200)
+* a48d772dc17e4e43b9d932b3f5ba2d94d79b4bc5
+| extract the userId from auth header in req and use it to connect
+
+| Stefan Lachmann (2018-10-12 11:26:27 +0200)
+* d0213f02d4f53e902d367e6ca0dfed532c7d54cd
+| added some scripts and deps to server pkg.json
+
+| Stefan Lachmann (2018-10-12 10:16:07 +0200)
+* 2a1980ec8e24515689720baebb2114b79eb1bd2d
+| server setup with prisma gql-yoga done has auth, feed, votes & filter
+
+| Stefan Lachmann (2018-10-11 13:40:05 +0200)
+* 21f0dfa8c6c2037392aa13ad31c3821475161e92
+| small fixes
+* 01f0e9a63d03164eb425ff7b7d99646444b0938d  (HEAD -> master)
+| Realtime updates with GraphQL Subscriptions
+
+| Stefan Lachmann (2018-10-15 15:59:16 +0200)
+* 1d613e77e5c1406b2d5f0377fa9f541f462dcbed
+| added resolverValidationOptions to quiet missing resolver for node warn
+
+| Stefan Lachmann (2018-10-15 14:50:38 +0200)
+* ad76066d0c317319d9c6f3ace03884b7ca75789c
+| style updates and added spinner animation for loading
+
+| Stefan Lachmann (2018-10-13 22:12:32 +0200)
+* a777960227a7daa39d5d1f72ad52d7378304485a
+| added vote functionality and search
+
+| Stefan Lachmann (2018-10-12 13:01:16 +0200)
+* c32d4474e5b7a24505ee05c52aeb0e23ad965d0c
+| FE:: added: links, gql-queries, mutations, routing and auth
+
+| Stefan Lachmann (2018-10-12 11:34:00 +0200)
+* a48d772dc17e4e43b9d932b3f5ba2d94d79b4bc5
+| extract the userId from auth header in req and use it to connect
+| Realtime updates with GraphQL Subscriptions
+
+| Stefan Lachmann (2018-10-15 15:59:16 +0200)
+* 1d613e77e5c1406b2d5f0377fa9f541f462dcbed
+| added resolverValidationOptions to quiet missing resolver for node warn
+
+| Stefan Lachmann (2018-10-15 14:50:38 +0200)
+* ad76066d0c317319d9c6f3ace03884b7ca75789c
+| style updates and added spinner animation for loading
+
+| Stefan Lachmann (2018-10-13 22:12:32 +0200)
+* a777960227a7daa39d5d1f72ad52d7378304485a
+| added vote functionality and search
+
+| Stefan Lachmann (2018-10-12 13:01:16 +0200)
+* c32d4474e5b7a24505ee05c52aeb0e23ad965d0c
+| FE:: added: links, gql-queries, mutations, routing and auth
+
+| Stefan Lachmann (2018-10-12 11:34:00 +0200)
+* a48d772dc17e4e43b9d932b3f5ba2d94d79b4bc5
+| extract the userId from auth header in req and use it to connect
+
+| Stefan Lachmann (2018-10-12 11:26:27 +0200)
+* d0213f02d4f53e902d367e6ca0dfed532c7d54cd
+| added some scripts and deps to server pkg.json
+
+| Stefan Lachmann (2018-10-12 10:16:07 +0200)
+* 2a1980ec8e24515689720baebb2114b79eb1bd2d
+| server setup with prisma gql-yoga done has auth, feed, votes & filter
+
+| Stefan Lachmann (2018-10-11 13:40:05 +0200)
+* 21f0dfa8c6c2037392aa13ad31c3821475161e92
+| small fixes
+
+| Stefan Lachmann (2018-10-11 09:52:27 +0200)
+* c6fb2059456442c90a3baef12fb96a18b5e27e13
+| some updates (mostly server stuff)
+
+| Stefan Lachmann (2018-10-11 09:47:03 +0200)
+* 7b6401942cbf4ece716d94d4ba50fac5811ed858
+| added fe notes
+
+| Stefan Lachmann (2018-10-10 21:29:17 +0200)
+* 4fe3a00590d6f005358bff51bc7aa0ede7750346
+| frontend init
+
+| Stefan Lachmann (2018-10-10 21:26:01 +0200)
+* ea3de5a52adfb906ff01b9284d410ce358a48986
+| server init setup
