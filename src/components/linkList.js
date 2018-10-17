@@ -6,7 +6,6 @@ import { withRouter } from 'react-router-dom';
 import Spinner from './loadingspinner';
 import { LINKS_PER_PAGE } from './utils/constants';
 
-
 export const FEED_QUERY = gql`
 query FeedQuery($first: Int, $skip: Int, $orderBy: LinkOrderByInput) {
     feed(first: $first, skip: $skip, orderBy: $orderBy){
@@ -177,9 +176,7 @@ class LinkList extends Component {
         if(page <= data.feed.count / LINKS_PER_PAGE) {
             const nextPage = page + 1
             this.props.history.push(`/new/${nextPage}`)
-        }else{
-            // hide next btn
-        }
+        } 
     }
 
     _previousPage = () => {
@@ -187,13 +184,13 @@ class LinkList extends Component {
         if(page > 1){
             const previousPage = page - 1
             this.props.history.push(`/new/${previousPage}`)
-        } else {
-            // hide previous btn
         }
     }
 
 
     render() {
+        const currentPage = parseInt(this.props.match.params.page);
+        // const lastpage = get the lastpage from the index and then remove the next button;
         return (
             <div style={{ textAlign: 'center' }}>
                 <Query query={FEED_QUERY} variables={this._getQueryVariables()}>
@@ -229,7 +226,7 @@ class LinkList extends Component {
                                     ))}
                                     {isNewPage && (
                                         <div className="flex ml4 mv3 gray">
-                                            <div className="pointer mr2" onClick={this._previousPage}>
+                                            <div className="pointer mr2" style={ currentPage === 1 ? { display:"none" } : { display:"inline" }} onClick={this._previousPage}>
                                                 Previous
                                             </div>
                                             <div className="pointer" onClick={() => this._nextPage(data)}>
