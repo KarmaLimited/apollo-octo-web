@@ -1,5 +1,10 @@
-* 01f0e9a63d03164eb425ff7b7d99646444b0938d  (HEAD -> master)
+* bcda850cb77ff1e0262ac7564e1be00d5e76e17b
+| updated various notes
+| Stefan Lachmann (2018-10-16 21:40:33 +0200)
+
+* 01f0e9a63d03164eb425ff7b7d99646444b0938d
 | Realtime updates with GraphQL Subscriptions
+| Stefan Lachmann (2018-10-15 15:59:16 +0200)
 
 | Stefan Lachmann (2018-10-15 15:59:16 +0200)
 * 1d613e77e5c1406b2d5f0377fa9f541f462dcbed

@@ -14,6 +14,10 @@ class Header extends React.Component {
                         News
                     </Link>
                     <span> | </span>
+                    <Link to="/top" className="links">
+                        Top
+                    </Link>
+                    <span> | </span>
                     {authToken && (
                         <span>
                             <Link to="/search" className="links">

@@ -1,5 +1,6 @@
 # Reading and Tools
 
+### front-end stuff
 Apollo’s render prop API to manage your GraphQL data just using components:
 https://blog.apollographql.com/introducing-react-apollo-2-1-c837cc23d926
 
@@ -14,6 +15,9 @@ https://tachyons.pro/
 
 react component testing with apollo
 https://www.apollographql.com/docs/guides/testing-react-components.html
+
+react fragments
+https://reactjs.org/docs/fragments.html
 
 ### backend-stuff -> server, engine & auth
 
