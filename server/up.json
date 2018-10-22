@@ -1,0 +1,7 @@
+{
+  "name": "server",
+  "profile": "default",
+  "regions": [
+    "eu-west-1"
+  ]
+}

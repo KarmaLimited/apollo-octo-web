@@ -1,8 +1,10 @@
-server setup from:
-https://www.howtographql.com/graphql-js/1-getting-started/
+deployed to:
+up ->:
+https://syaulcjsnd.execute-api.eu-west-1.amazonaws.com/
 
-setting up databases:
-https://www.howtographql.com/graphql-js/4-adding-a-database/
+[**stage**](https://syaulcjsnd.execute-api.eu-west-1.amazonaws.com/staging/)
+
+[**prod**](https://syaulcjsnd.execute-api.eu-west-1.amazonaws.com/production/)
 
 faq:
 Root fields define the available API operations
