@@ -211,7 +211,7 @@ class LinkList extends Component {
                         
                         return (
                             <div>
-                                <ol>
+                                <ul style={{listStyleType: 'upper-roman'}}>
                                 <Fragment>
                                     {linksToRender.map((link, index) => (
 
@@ -235,7 +235,7 @@ class LinkList extends Component {
                                         </div>
                                     )}
                                     </Fragment>
-                                </ol>
+                                </ul>
                             </div>
                         )
                     }}

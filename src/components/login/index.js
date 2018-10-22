@@ -15,15 +15,15 @@ class LoginPage extends Component {
                     </article>
                     <aside className="aside aside-1">
                         <div className="loginOptions">
-                            <a href="http://localhost:3000/" rel="noopener"><FaGoogle /><br />google</a>
+                            <a href="http://google.com/" rel="noopener"><FaGoogle /><br />google</a>
                         </div>
                         <div className="loginOptions">
-                            <a href="http://localhost:3000/" rel="noopener"><FaLinkedin /><br />in</a>
+                            <a href="http://linkedin.com/" rel="noopener"><FaLinkedin /><br />in</a>
                         </div>
                     </aside>
                     <aside className="aside aside-2">
-                        <div className="loginOptions"><a href="http://localhost:3000/" rel="noopener"><FaGithub /><br />github</a></div>
-                        <div className="loginOptions"><a href="http://localhost:3000/" rel="noopener"><FaFacebook /><br />facebook</a></div>
+                        <div className="loginOptions"><a href="http://github.com/" rel="noopener"><FaGithub /><br />github</a></div>
+                        <div className="loginOptions"><a href="http://facebook.com/" rel="noopener"><FaFacebook /><br />facebook</a></div>
                     </aside>
 
                 </div>

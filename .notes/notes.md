@@ -6,6 +6,3 @@ apollo-boost: Package containing everything you need to set up Apollo Client
 react-apollo: View layer integration for React
 graphql: Also parses your GraphQL queries
 
-
-currently at:
-https://www.howtographql.com/react-apollo/9-pagination/
