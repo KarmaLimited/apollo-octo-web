@@ -51,3 +51,12 @@ https://itnext.io/introduction-to-graphql-mongo-helpers-a457944d4c8a
 
 node gql boilerplates:
 https://github.com/graphql-boilerplates/node-graphql-server
+
+prisma setup w circleCi
+https://www.prisma.io/tutorials/09-Configure-CircleCI-with-Prisma-circ
+
+deploying to Apex up
+https://www.prisma.io/tutorials/deploy-a-graphql-server-with-apex-up-cs05/
+
+deploying to netlify
+https://blog.apollographql.com/deploy-a-fullstack-apollo-app-with-netlify-45a7dfd51b0b

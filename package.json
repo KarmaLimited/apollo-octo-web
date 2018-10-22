@@ -1,11 +1,12 @@
 {
-  "name": "my-web",
+  "name": "apollo-octo-web",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
     "apollo-boost": "^0.1.16",
     "apollo-link-context": "^1.0.9",
     "apollo-link-ws": "^1.0.9",
+    "dotenv": "^6.1.0",
     "graphql": "^14.0.2",
     "react": "^16.5.2",
     "react-apollo": "^2.2.4",
