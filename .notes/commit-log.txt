@@ -1,3 +1,11 @@
+* 75f0d52c2bca003c928d4d6250af60c3b8f31e60
+| remove previous btn on first pageindex
+| Stefan Lachmann (2018-10-17 12:09:07 +0200)
+
+* 2ae6e59f7ca6f0d00a67dbde213f1bc1fbf0e360
+| added pagination
+| Stefan Lachmann (2018-10-17 11:18:50 +0200)
+
 * bcda850cb77ff1e0262ac7564e1be00d5e76e17b
 | updated various notes
 | Stefan Lachmann (2018-10-16 21:40:33 +0200)
